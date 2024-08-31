@@ -3,9 +3,8 @@ public class Main {
     public static void main(String[] args) {
         Race race = new Race();
         for (int i = 1; i <= 3; i++) {
-            String carName = "";
-            int carSpeed = 0;
-
+            String carName;
+            int carSpeed;
             Input inputName = new Input();
             Input inputSpeed = new Input();
             carName = inputName.getStringValue(
