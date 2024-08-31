@@ -19,6 +19,7 @@ public class Main {
             Car car = new Car(carName, carSpeed);
             race.checkLeader(car);
         }
+
         System.out.println("Победитель гонки " + race.getLeader().name);
     }
 }
