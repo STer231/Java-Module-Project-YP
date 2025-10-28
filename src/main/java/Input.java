@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Input {
-    private final Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
-    public String getStringValue(String message, String errorMessage) {
+    public static String getStringValue(String message, String errorMessage) {
         while (true) {
             System.out.println(message);
             if (!scanner.hasNext("[A-Za-z]+") && !scanner.hasNext("[А-Яа-я]+")) {
@@ -15,7 +15,7 @@ public class Input {
         }
     }
 
-    public int getIntegerValue(String message, String errorMessage, int downLimit, int upperLimit) {
+    public static int getIntegerValue(String message, String errorMessage, int downLimit, int upperLimit) {
         while (true) {
             System.out.println(message);
             if (scanner.hasNextInt()) {
